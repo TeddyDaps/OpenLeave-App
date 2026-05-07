@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenLeave - Σύστημα Αδειών</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌴 OpenLeave</h1>
+        <p>Απλό. Ανοιχτό. Αποτελεσματικό.</p>
+    </header>
+
+    <div class="container">
+        <!-- Οθόνη Υπαλλήλου -->
+        <section class="employee-section">
+            <h2>Φόρμα Αίτησης Άδειας (Υπάλληλος)</h2>
+            <form id="leave-form">
+                <input type="text" id="emp-name" placeholder="Ονοματεπώνυμο" required>
+                <div class="dates">
+                    <label>Από: <input type="date" id="start-date" required></label>
+                    <label>Έως: <input type="date" id="end-date" required></label>
+                </div>
+                <input type="text" id="reason" placeholder="Λόγος (π.χ. Ασθένεια, Διακοπές)" required>
+                <button type="submit">Υποβολή Αίτησης</button>
+            </form>
+        </section>
+
+        <!-- Οθόνη Manager -->
+        <section class="manager-section">
+            <h2>Εκκρεμείς Αιτήσεις (Manager)</h2>
+            <div id="requests-list">
+                <!-- Εδώ θα εμφανίζονται οι αιτήσεις μέσω JavaScript -->
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
